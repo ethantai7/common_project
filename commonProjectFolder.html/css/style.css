@@ -1,0 +1,23 @@
+body{
+    background-color: aqua;
+    
+}
+p{
+    color: red;
+    line-height: 30px;
+}
+h1{
+    font-size: larger;
+
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+}
+h2{
+    font-size:medium;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+}
+li{
+    display: inline-block;
+    margin-left: 50px;
+}
