@@ -1,0 +1,84 @@
+@media (prefers-reduced-motion: reduce) {
+    /* Disable GIF animations */
+    img[src$=".gif"] {
+      animation: none !important;
+    }
+  }
+body{
+    background-color: lightgray;
+    margin:10px;
+    
+}
+p{
+    color: darkblue;
+    line-height: 30px;
+    text-align: center;
+}
+h1{
+    font-size: 100px;
+    text-align: center;
+   
+
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    position:relative; 
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    0%   {left:0px; top:-20px;}
+    100% {left:0px; top:20px;}
+  }
+
+h2{
+    font-size:70px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+li{
+    
+    margin-left: 50px;
+}
+img{
+    width: 200px;
+    height:200px;
+    border:2px solid blue;
+    margin:20px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+    border: 2px solid black;
+  }
+
+  .grid-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  .grid-item img, .grid-item video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .skip {
+    display: block;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    opacity: 0; 
+    transition: opacity 0.3s;
+  }
+
+  .skip:hover {
+    background-color: #555;
+  }
+
+  .skip:focus {
+    opacity: 1; 
+  }
