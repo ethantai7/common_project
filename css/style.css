@@ -4,26 +4,29 @@
       animation: none !important;
     }
   }
-@media screen and (prefers-reduced-motion: reduce){
-  html{
-      scroll-behavior: auto; /* Removes scroll animation */
+
+
+
+  @media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+  
+    .skip a{
+      -webkit-transition: none; /* sets to default setting */
+      transition: none;        /* sets to default setting */
+     }
+  
+     
+      .gif {
+        display: none;
+      }
+  
+      h1 {
+        animation: none;
+      }
+  
   }
-
-  .skip a{
-    -webkit-transition: none; /* sets to default setting */
-    transition: none;        /* sets to default setting */
-   }
-
-   
-    .gif {
-      display: none;
-    }
-
-    h1 {
-      animation: none;
-    }
-
-}
 body{
     background-color: lightgray;
     margin:10px;
@@ -102,3 +105,53 @@ img{
   .skip:focus {
     opacity: 1; 
   }
+
+  @media (min-width: 600px) and (max-width: 900px) {
+    /* Tablet view styles */
+  
+    body {
+      margin: 20px; /* Increase margin for tablet view */
+    }
+  
+    h1 {
+      font-size: 80px; /* Adjust font size for tablet view */
+    }
+  
+    h2 {
+      font-size: 50px; /* Adjust font size for tablet view */
+    }
+  
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr); /* Change to one column for tablet view */
+    }
+  
+    .grid-item {
+      border: 1px solid #ccc;
+      padding: 20px; /* Increase padding for tablet view */
+    }
+  
+    img {
+      width: 250px; /* Adjust image size for tablet view */
+      height: 250px;
+    }
+
+    li:hover {
+      text-decoration: underline;
+    }
+    h2:hover{
+      text-decoration:underline;
+    }
+    h2.sticky {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      background-color: lightgray; /* Change to match your background */
+      padding: 10px;
+      z-index: 100; /* Ensure it appears above other content */
+    }
+    
+  }
+
+
+
+  
